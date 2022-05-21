@@ -11,8 +11,8 @@ class Activity3 : AppCompatActivity() {
         setContentView(R.layout.activity3)
         this.title = "Activity 3"
 
-        val forwardButton = findViewById<Button>(R.id.navigation_next_button_activity3)
-        val goBackButton = findViewById<Button>(R.id.navigation_prev_button_activity3)
+        val forwardButton = findViewById<Button>(R.id.navigation_next_button_activity)
+        val goBackButton = findViewById<Button>(R.id.navigation_prev_button_activity)
 
         forwardButton.setOnClickListener {
             startActivity(Intent(this, Activity4::class.java))
