@@ -11,14 +11,14 @@ class Activity4 : AppCompatActivity() {
         setContentView(R.layout.activity4)
         this.title = "Activity 4"
 
-        val forwardButton = findViewById<Button>(R.id.navigation_next_button_activity4)
-        val goBackButton = findViewById<Button>(R.id.navigation_prev_button_activity4)
+        val forwardButton = findViewById<Button>(R.id.navigation_next_button_activity)
+        val goBackButton = findViewById<Button>(R.id.navigation_prev_button_activity)
 
         forwardButton.setOnClickListener {
             startActivity(Intent(this, Activity1::class.java))
         }
-        goBackButton.setOnClickListener{
-            startActivity(Intent(this, Activity3::class.java))
+        goBackButton.setOnClickListener {
+            this.onBackPressed()
         }
     }
 }
