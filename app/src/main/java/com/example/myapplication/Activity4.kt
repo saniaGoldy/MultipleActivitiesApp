@@ -17,8 +17,8 @@ class Activity4 : AppCompatActivity() {
         forwardButton.setOnClickListener {
             startActivity(Intent(this, Activity1::class.java))
         }
-        goBackButton.setOnClickListener{
-            startActivity(Intent(this, Activity3::class.java))
+        goBackButton.setOnClickListener {
+            this.onBackPressed()
         }
     }
 }
